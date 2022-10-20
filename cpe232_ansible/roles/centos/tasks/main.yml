@@ -82,8 +82,12 @@
 
 - name: Verifying the nagios and httpd is starting and enabled
   service:
-    name:
-       - nagios
-       - httpd
+    name: nagios
+    state: restarted
+    enabled: true
+
+- name: Verifying the nagios and httpd is starting and enabled
+  service:
+    name: httpd
     state: restarted
     enabled: true
