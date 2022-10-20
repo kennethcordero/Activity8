@@ -77,8 +77,8 @@
 - name: Adding user to a password file and verifying permission are set
   community.general.htpasswd:
     path: /usr/local/nagios/etc/htpasswd.users
-    name: adminnagios
-    password: server12345
+    name: cordero
+    password: lastking23
 
 - name: Verifying the nagios is starting and enabled
   service:
