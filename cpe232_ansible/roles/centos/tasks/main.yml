@@ -80,14 +80,10 @@
     name: cordero
     password: lastking23
 
-- name: Verifying the nagios is starting and enabled
+- name: Verifying the nagios and httpd is starting and enabled
   service:
-    name: nagios
-    state: restarted
-    enabled: true
-
-- name: Verifying the httpd is starting and enabled
-  service:
-    name: httpd
+    name:
+       - nagios
+       - httpd
     state: restarted
     enabled: true
